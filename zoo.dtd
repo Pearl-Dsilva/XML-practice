@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT animals (animal)>
+<!ELEMENT animal (name,age,species,gender,habitat)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT species (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT habitat (#PCDATA)>
+<!ATTLIST animal id ID #REQUIRED>

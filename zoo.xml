@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="zoo.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<animals>
+    <animal id="panda1">
+        <name>Panda</name>
+        <age>23</age>
+        <species>Red Panda</species>
+        <gender>Female</gender>
+        <habitat>Cave with pool</habitat>
+    </animal>
+    <animal id="panda2">
+        <name>Panda</name>
+        <age>1</age>
+        <species>Red Panda</species>
+        <gender>Female</gender>
+        <habitat>Cave with pool</habitat>
+    </animal>
+    <animal id="tiger1">
+        <name>Tiger</name>
+        <age>12</age>
+        <species>Bengal tiger</species>
+        <gender>Female</gender>
+        <habitat>Cave with pool</habitat>
+    </animal>
+</animals>

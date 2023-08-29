@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="animals">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="animal" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"></xs:element>
+                            <xs:element name="age" type="xs:integer"></xs:element>
+                            <xs:element name="species" type="xs:string"></xs:element>
+                            <xs:element name="gender" type="xs:string"></xs:element>
+                            <xs:element name="habitat" type="xs:string"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType> 
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="genderOfAnimal">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Male"></xs:enumeration>
+            <xs:enumeration value="Female"></xs:enumeration>
+            <xs:enumeration value="Other"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ageRage">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:maxInclusive value="200"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
